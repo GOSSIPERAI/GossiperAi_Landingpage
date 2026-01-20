@@ -30,13 +30,13 @@ export default function HomePage() {
               </div>
               <div className="flex flex-col sm:flex-row gap-4">
                 <Button size="lg" className="text-lg px-8" asChild>
-                  <Link href="/join-session">
-                    Join a Session
+                  <Link href="/features">
+                    Learn More
                     <ArrowRight className="ml-2 h-5 w-5" />
                   </Link>
                 </Button>
                 <Button size="lg" variant="outline" className="text-lg px-8 bg-transparent text-foreground hover:text-foreground" asChild>
-                  <Link href="/create-session">Create Session</Link>
+                  <Link href="/contact">Get in Touch</Link>
                 </Button>
               </div>
               <div className="flex items-center space-x-6 text-sm text-muted-foreground">
@@ -50,7 +50,7 @@ export default function HomePage() {
                 </div>
               </div>
             </div>
-            
+
             <div className="relative">
               <div className="relative bg-card border border-border rounded-2xl p-6 shadow-2xl">
                 <div className="space-y-4">
@@ -175,8 +175,8 @@ export default function HomePage() {
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <Button size="lg" variant="secondary" className="text-lg px-8 " asChild>
-                  <Link href="/signup">
-                    Start Free Trial
+                  <Link href="/contact">
+                    Get Started
                     <ArrowRight className="ml-2 h-5 w-5" />
                   </Link>
                 </Button>
@@ -184,9 +184,8 @@ export default function HomePage() {
                   size="lg"
                   variant="outline"
                   className="text-lg px-8 border-primary-foreground/20 text-primary-foreground hover:bg-primary-foreground/10 bg-transparent hover:text-foreground"
-                  asChild
-                >
-                  <Link href="/demo">Watch Demo</Link>
+                  asChild>
+                  <Link href="/features">Learn More</Link>
                 </Button>
               </div>
             </div>
@@ -222,7 +221,7 @@ export default function HomePage() {
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 mt-8">
             <div className="text-center sm:text-left">
               <h3 className="font-semibold mb-3 sm:mb-4 text-foreground">Product</h3>
-              <ul className="space-y-2 text-sm sm:text-Camp Network text-muted-foreground">
+              <ul className="space-y-2 text-sm sm:text-base text-muted-foreground">
                 <li>
                   <Link href="/features" className="hover:text-foreground transition-colors inline-block py-1">
                     Features
@@ -233,17 +232,12 @@ export default function HomePage() {
                     Pricing
                   </Link>
                 </li>
-                <li>
-                  <Link href="/demo" className="hover:text-foreground transition-colors inline-block py-1">
-                    Demo
-                  </Link>
-                </li>
               </ul>
             </div>
 
             <div className="text-center sm:text-left">
               <h3 className="font-semibold mb-3 sm:mb-4 text-foreground">Company</h3>
-              <ul className="space-y-2 text-sm sm:text-Camp Network text-muted-foreground">
+              <ul className="space-y-2 text-sm sm:text-base text-muted-foreground">
                 <li>
                   <Link href="/about" className="hover:text-foreground transition-colors inline-block py-1">
                     About
@@ -254,17 +248,12 @@ export default function HomePage() {
                     Contact
                   </Link>
                 </li>
-                <li>
-                  <Link href="/careers" className="hover:text-foreground transition-colors inline-block py-1">
-                    Careers
-                  </Link>
-                </li>
               </ul>
             </div>
 
             <div className="text-center sm:text-left sm:col-span-2 lg:col-span-1">
               <h3 className="font-semibold mb-3 sm:mb-4 text-foreground">Support</h3>
-              <ul className="space-y-2 text-sm sm:text-Camp Network text-muted-foreground">
+              <ul className="space-y-2 text-sm sm:text-base text-muted-foreground">
                 <li>
                   <Link href="/help" className="hover:text-foreground transition-colors inline-block py-1">
                     Help Center
