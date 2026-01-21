@@ -9,6 +9,7 @@ import { Badge } from "@/components/ui/badge"
 import { Menu, ArrowRight, Zap, Globe, Users, Headphones } from "lucide-react"
 import Image from "next/image"
 import { cn } from "@/lib/utils"
+import { getSigninUrl } from "@/lib/auth-links"
 
 const navigation = [
   { name: "Features", href: "/features", icon: Zap },
@@ -56,6 +57,9 @@ export function MainNavigation() {
             ))}
             <Button className="text-foreground hover:text-foreground" variant="outline" asChild>
               <Link href="/contact">Contact Us</Link>
+            </Button>
+            <Button asChild>
+              <Link href={getSigninUrl()}>Sign In</Link>
             </Button>
           </div>
 
@@ -142,6 +146,13 @@ export function MainNavigation() {
                         pathname === "/contact" && "opacity-100"
                       )} />
                     </Link>
+                  </div>
+                  <div className="border-t border-border pt-4 mt-4">
+                    <Button className="w-full" asChild>
+                      <Link href={getSigninUrl()} onClick={() => setIsOpen(false)}>
+                        Sign In
+                      </Link>
+                    </Button>
                   </div>
                 </div>
               </SheetContent>
