@@ -3,7 +3,7 @@
  * Manages redirects to the main application for authentication flows
  */
 
-export const getAppAuthUrl = (page: string): string => {
+const getAppAuthUrl = (page: string): string => {
   const baseUrl = process.env.NEXT_PUBLIC_APP_URL || '/'
   const authPages: Record<string, string> = {
     signin: '/signin',
@@ -16,13 +16,13 @@ export const getAppAuthUrl = (page: string): string => {
 /**
  * Get the signin page URL for the main application
  */
-export const getSigninUrl = (): string => {
+const getSigninUrl = (): string => {
   return getAppAuthUrl('signin')
 }
 
 /**
  * Get the signup page URL for the main application
  */
-export const getSignupUrl = (): string => {
+const getSignupUrl = (): string => {
   return getAppAuthUrl('signup')
 }
