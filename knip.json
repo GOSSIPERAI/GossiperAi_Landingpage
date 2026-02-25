@@ -1,0 +1,9 @@
+{
+  "$schema": "https://knip.dev/reference/configuration",
+  "project": [
+    "src/**/*.{ts,tsx,css}"
+  ],
+  "ignoreDependencies": [
+    "prettier"
+  ]
+}
