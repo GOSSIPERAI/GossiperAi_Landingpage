@@ -16,13 +16,13 @@ const getAppAuthUrl = (page: string): string => {
 /**
  * Get the signin page URL for the main application
  */
-const getSigninUrl = (): string => {
+export const getSigninUrl = (): string => {
   return getAppAuthUrl('signin')
 }
 
 /**
  * Get the signup page URL for the main application
  */
-const getSignupUrl = (): string => {
+export const getSignupUrl = (): string => {
   return getAppAuthUrl('signup')
 }
