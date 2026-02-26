@@ -17,7 +17,7 @@ const getAppAuthUrl = (page: string): string => {
  * Get the signin page URL for the main application
  */
 export const getSigninUrl = (): string => {
-  return getAppAuthUrl('signin')
+  return getAppAuthUrl('')
 }
 
 /**
